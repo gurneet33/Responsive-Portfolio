@@ -1,41 +1,115 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Gurneet's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style>
+    .nametag {
+        background-color: #4aaaa5;
+        text-align: center;
+        color: white;
+        padding: 2%;
+    }
+    .container {
+        margin-top: 4%;
+    }
+    .nav-link {
+        color: gray;
+    }
+   
+    .active {
+        color:#4aaaa5;
+    }
+    a:hover {
+        color: pink;
+    }
+    a::after{
+        color: white;
+    }
+    .midblock {
+        border: 1px solid #eeee;
+        width:70%; 
+        padding-bottom: 20px;
+        margin-top:90px;
+        color: black;
+    }
+    .my-img {
+        float:left;
+        width:20%;
+        border:0px
+    }
+    .card {
+        margin-top:-8px;
+    
+    }
+    .page-footer {
+        background-color: #666666;
+        border-top:5px solid #4aaaa5;
+        
+    }
+    </style>
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div id="header">
-            <h2 id="name">Gurneet Kaur</h2>
-            <div id="menu">
-            <ul>
-                <li><a  href="./index.html">About</a></li>
-                <li><a id="bor" href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
-        <img id="backdrop" src="./assets/images/spring.png" alt="background">
-        <div class="text-block ">
-            <h3>About me</h3>
-            <section class="respond ">
-                <img id="mypic" src="./assets/images/mine.jpg" alt="my-picture" >
-                <p id="blog">I am a creative and adventurous person.I love singing, writing, cooking and most of all I love
-                    spending time with my kids.I find creating websites as a very rewarding task. With this assignment
-                    specifically I got to learn so much. Looking forward to more learning. Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Tempora vitae, ex dolor quisquam, sequi fugiat tempore sed maxime
-                    facere aliquam expedita eius, dolores quis! Iusto suscipit ea voluptatibus iure excepturi. </p>
-            </section>
+        <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="nametag">
+                    <h4>Gurneet Kaur</h4>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                    </button>
+                    <div class="d-flex flex-row justify-content-end bd-highlight mb-3 collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="p-2 nav-item ">
+                                <a class="nav-link active" href="./index.html">About Me <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="p-2 nav-item ">
+                                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="p-2 nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
 
+    <div class="card flex text-white">
+        <img class="card-img" src="./Images/spring.png" alt="Card image">
+        <div class="card-img-overlay">
+            <div class="container midblock">
+                <h5 class="card-header bg-transparent ">About Me</h5>
+                <img class="img-thumbnail my-img" src="./Images/mine.jpg" alt="my img">
+                <p class="card-text">I am a creative and adventurous person.I love singing, writing, cooking and most
+                    of all I love spending time with my kids.I find creating websites as a very rewarding task. With
+                    this assignment specifically I got to learn so much. Looking forward to more learning. Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Tempora vitae, ex dolor quisquam, sequi fugiat tempore
+                    sed maxime facere aliquam expedita eius, dolores quis! Iusto suscipit ea voluptatibus iure
+                    excepturi.
+
+                </p>
+            </div>
         </div>
     </div>
-    <div id="footer">
-        <h4>copyright&copy;</h4>
-    </div>
+    <footer class= "page-footer font-small  pt-2">
+            <div class="footer-copyright text-center py-3">Copyright© 2018 
+            </div>
+    </footer>
+    
 </body>
 
 </html>
